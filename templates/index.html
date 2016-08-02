@@ -22,16 +22,16 @@
         <p>I'm <code>iiv</code>. Here are some things I like:</p>
         <ul>
         {% for item in things_i_like %}
-            <li>{{item}}</li>
+            <li>{{item|safe}}</li>
         {% endfor %}
         </ul>
     </div>
     <div class="small-container">
         <h2>Projects</h2>
-        <p>I like doing things, here are some programming projects:</p>
+        <p>I like doing things, here are some of my programming projects:</p>
         <ul>
         {% for item in projects %}
-            <li>{{item}}</li>
+            <li>{{item|safe}}</li>
         {% endfor %}
         </ul>
     </div>
