@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>iiv's space</title>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="static/style.css"/>
+    <link rel="icon" type="image/png" href="favicon.png"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato"/>
+</head>
+
+<body>
+    <h1>iiv's playground</h1>
+    <div class="container">
+        <p>Welcome to my personal site! This is where I can collect, document and write my ideas and projects. There will probably be lots of improvement in the future, so be ready for some big changes.
+        <br/>I hope that both you and I can learn many things by reading/building this site and I'm sure we'll have the whale of a time. If you're not me; keep reading, and if I'm me, keep doing what I'm supposed to do.
+        <br/>If you for any reason want to contact me, you can mail me at
+        <br/><code>iiv [you know it] openmailbox.org</code></p>
+    </div>
+    <div class="small-container">
+        <h2>About me</h2>
+        <p>I'm <code>iiv</code>. Here are some things I like:</p>
+        <ul>
+        {% for item in things_i_like %}
+            <li>{{item}}</li>
+        {% endfor %}
+        </ul>
+    </div>
+    <div class="small-container">
+        <h2>Projects</h2>
+        <p>I like doing things, here are some programming projects:</p>
+        <ul>
+        {% for item in projects %}
+            <li>{{item}}</li>
+        {% endfor %}
+        </ul>
+    </div>
+    <p><a href="#top">Go to top</a><br/>Thanks to <a href="http://skylab.org">skylab.org </a>for hosting this website.
+</body>
+</html>
